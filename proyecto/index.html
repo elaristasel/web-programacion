@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página Inmobiliaria</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 20px 0;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .gallery-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    .gallery-item img,
+    .gallery-item p {
+      flex: 1;
+      max-width: 48%;
+    }
+    .gallery-item img {
+      max-height: 300px;
+      margin-right: 10px;
+    }
+    .gallery-item:nth-child(odd) img {
+      order: 1;
+      margin-left: 0;
+      margin-right: 10px;
+    }
+    .gallery-item:nth-child(odd) p {
+      order: 2;
+    }
+    .gallery-item:nth-child(even) img {
+      order: 2;
+      margin-left: 10px;
+      margin-right: 0;
+    }
+    .gallery-item:nth-child(even) p {
+      order: 1;
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .location img {
+      max-width: 55%;
+      height: auto;
+      margin-right: 20px;
+    }
+    .location .contacts {
+      flex: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .nav-bar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .nav-bar a:hover {
+    background-color: #555;
+  }
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  .nav-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contáctanos con nosotros</a>
+      </div>
+<header>
+  <img src="imagenes/logo.gif" alt="Inmobiliaria Dino">
+</header>
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="imagenes/foto1.jpg" alt="Ambiente 1">
+    <p>Living Comedor:<br>
+    Espacioso living comedor de estilo contemporáneo con muebles neutros y detalles metálicos. Grandes ventanales llenan el espacio de luz, resaltando los tonos suaves de las paredes. Comedor adyacente con mesa minimalista 
+        y sillas de respaldo alto para reuniones familiares y sociales.</p>
+  </div>
+  <div class="gallery-item">
+    <img src="imagenes/foto3.jpg" alt="Ambiente 2">
+    <p>Baño:<br>
+        Elegante baño con azulejos de mármol blanco y detalles dorados. Bañera independiente y ducha de efecto lluvia para momentos de relax. Espejo grande enmarcado en oro antiguo sobre 
+        el lavamanos con amplio almacenamiento. Iluminación cálida crea una atmósfera relajante.</p>
+  </div>
+  <div class="gallery-item">
+    <img src="imagenes/foto2.jpg" alt="Ambiente 3">
+    <p>Dormitorio:<br>
+        Dormitorio principal sereno con paredes en tonos suaves y mobiliario minimalista. Cama king-size con cabecera tapizada y vistas 
+        panorámicas. Rincón de lectura acogedor, armarios empotrados para almacenamiento ordenado.</p>
+  </div>
+  <div class="gallery-item">
+    <img src="imagenes/foto4.jpg" alt="Ambiente 4">
+    <p>Cocina:<br>
+        Cocina moderna y funcional con gabinetes blancos brillantes, encimeras de granito negro y electrodomésticos de acero inoxidable. Isla central para preparación y comidas informales, integración fluida con el área de comedor.
+        Iluminación empotrada y luces colgantes para una cocina bien iluminada y espaciosa.</p>
+  </div>
+</div>
+<div class="location">
+    <img src="imagenes/ubicacion.jpg" alt="Ubicación">
+    <div class="contacts">
+      <p>Contacto: Dino Inmobiliaria</p>
+      <p>Teléfono: 22241212</p>
+      <p>Correo: dinoinmobiliaria@gmail.com</p>
+      <p>Referencias: Aqui</p>
+    </div>
+  </div>
+  <footer>
+    <p>Derechos Reservados 2023</p>
+  </footer>
+</html>
